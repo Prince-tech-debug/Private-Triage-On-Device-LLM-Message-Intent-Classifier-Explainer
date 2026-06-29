@@ -48,7 +48,7 @@ Metric: Optimized for Recall, ensuring that "Urgent" business logic is never mis
 
 Windows 11 or macOS.
 
-RAM: 8GB Minimum (16GB Recommended). otherwise it would be difficult to fine-ttrain the model on the device
+RAM: 8GB Minimum (16GB Recommended). otherwise it would be difficult to fine-tune and train the model on the device
 
 GPU: Any DirectX 12 or Metal compatible GPU for accelerated inference.
 
