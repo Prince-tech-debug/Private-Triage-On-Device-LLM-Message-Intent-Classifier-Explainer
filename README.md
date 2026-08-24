@@ -61,3 +61,8 @@ This project is licensed under the Apache License 2.0. As of April 2026, the Gem
 ### Affiliation: Madhav Institute of Technology and Science (MITS), Gwalior
 
 ## Start Date of the Project = 21-06-2026
+## I know its taking long for this project to be completed but, I have a reasonable explaination for that.
+#### First of all the fine - tuning was being done on the colab t4 thanks to google because of low computation power of my pc. I have to constantly shift from on work flow to another to find out which is most efficent and will give the optimal results in optimal time. So, here is what I find. I found a environment which is suited of this kind of task 'UNSLOTH' It's an open source platform which helps the developer to do LORA and QLORA(this is what we are doing) fine - tuning with optimal time and computation power. I also did it on unsloth and the result of the runs can be seen on 
+[my_wandb](https://wandb.ai/princexparashar-madhav-institute-of-technology-science/huggingface/workspace?nw=nwuserprincexparashar)
+
+I found about this through a link to an opensource contributer this is the platform which helps you manage you trained models and fine - tuned model before this I used to hard code the UI for evaluation and this is clearly better.
