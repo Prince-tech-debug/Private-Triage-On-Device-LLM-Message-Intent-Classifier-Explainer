@@ -1,11 +1,11 @@
 # Private-Triage: Local AI-Powered Desktop Notification Agent
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Model](https://img.shields.io/badge/Model-Gemma--4--E4B-orange)](https://huggingface.co/google/gemma-4-e4b-it)
+[![Model](https://img.shields.io/badge/Model-Gemma--3--4B-orange)](https://huggingface.co/google/gemma-3-4b-it)
 [![OS-Ready](https://img.shields.io/badge/Platform-Windows_11-blue)](https://microsoft.com/windows)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
-A privacy-first, system-level agent that intercepts incoming desktop notifications (Email, Slack, Teams) and uses a local **Gemma 4 E4B** model to categorize them by intent, provide reasoning, and suggest instant actions—all without sending data to the cloud.
+A privacy-first, system-level agent that intercepts incoming desktop notifications (Email, Slack, Teams) and uses a local **Gemma 3 4B** model to categorize them by intent, provide reasoning, and suggest instant actions—all without sending data to the cloud.
 
 ## 🚀 Key Features
 
@@ -20,7 +20,7 @@ A privacy-first, system-level agent that intercepts incoming desktop notificatio
 The system operates as a seamless background service:
 
 1.  **Stage 1 (System Listener):** A Python background process monitors the Windows/macOS Notification Center.
-2.  **Stage 2 (Inference):** Extracted snippets are fed to a quantized **Gemma 4 E4B** model. It performs a "Rationale-First" analysis to determine intent (Urgent, Scheduling, Info, or Social).
+2.  **Stage 2 (Inference):** Extracted snippets are fed to a quantized **Gemma 3 4B** model. It performs a "Rationale-First" analysis to determine intent (Urgent, Scheduling, Info, or Social).
 3.  **Stage 3 (Triage GUI):** High-priority alerts are mirrored in a custom **CustomTkinter** dashboard with "One-Click" action buttons.
 
 ## 📂 Project Structure
@@ -36,7 +36,7 @@ The system operates as a seamless background service:
 └── README.md            # Project Documentation
 ```
 
-## 📊 Dataset & TrainingModel: Google Gemma 4 E4B (Instruction Tuned). 
+## 📊 Dataset & TrainingModel: Google Gemma 3 4B (Instruction Tuned). 
 
 Training Method: Fine-tuned via QLoRA on 15,000 synthesized notification-intent pairs.
 
@@ -54,7 +54,7 @@ GPU: Any DirectX 12 or Metal compatible GPU for accelerated inference.
 
 ## ⚖️ License
 
-This project is licensed under the Apache License 2.0. As of April 2026, the Gemma 4 family is fully open-source under Apache 2.0, allowing for complete developer sovereignty.
+This project is licensed under the Apache License 2.0. As of April 2026, the Gemma 3 family is fully open-source under Apache 2.0, allowing for complete developer sovereignty.
 
 
 ### Author: Prince Parashar
